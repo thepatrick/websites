@@ -1,0 +1,64 @@
+h1, .content, .sosumi.big.fixed {
+  position: relative;
+}
+h1 {
+  top: 0;
+  font-size: 24px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.content {
+  padding-top: 10px;
+  top: 0;
+}
+
+.content nav a {
+  display: block;
+  font-size: 1.4em;
+  padding: 5px 0;
+}
+
+.content a:hover, nav.normal-page a:hover {
+	text-decoration: none;
+}
+
+.content nav.software-and-projects {
+  background-color: #eee;
+  -webkit-border-radius: 5px;
+}
+
+@-webkit-keyframes glow-iphone {
+	from {
+		background-color: #fff;
+		padding: 5px 0;
+	}
+	25% {
+		background-color: #fafafa;
+		padding: 5px 1px;
+	}
+	50% {
+		background-color: #f6f6f6;
+		padding: 5px 2px;
+	}
+	75% {
+		background-color: #f2f2f2;
+		padding: 5px 3px;
+	}
+	to {
+		background-color: #eee;
+		padding: 5px 4px;
+	}
+}
+
+.active {
+	padding: 5px 4px;
+	background-color: #eee;
+	-webkit-animation-name: 'glow-iphone';
+	-webkit-animation-duration: .7s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-decoration: none;
+}
