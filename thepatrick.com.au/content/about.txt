@@ -1,0 +1,57 @@
+---
+title:       About
+created_at:  2008-08-02 14:06:40.000000 -06:00
+filter:
+  - erb
+  - markdown
+---
+
+Introductions
+-------------
+
+<img src="http://thepatrick.cachefly.net/about/4/ofme.jpg" width="218" height="152" alt="Me" style="display: block; margin:  11px 30px 19px 0; border: 0; float: left;" />
+
+I am a 25 year old guy who is currently working in Sydney, Australia. 
+Opinions expressed around here are, of course, my own.
+
+**People**. I could not be a hermit that lived completely disconnected from other people. I think that is what turned me to the internet, and my technical inclination brought having a website to the front of my mind as being the most logical way of connecting with other people.
+
+**Computers**. I can not imagine my life without the influence they have had. I am not strongly defensive of any platform over another - though I can not deny that Mac OS X is my favourite. I value open source, because I believe it is a viable way of building software. I value commercial applications, because if it truely is good, and someone wants to be paid for it, then it is worth paying for. (Check out the current [software toolkit][toolkit].)
+
+**Photography**. It's a relatively low priority passion, 
+but I think I'm getting better. All the photos you see on this site were 
+taken by me. This has some definite advantages (for one I can allow myself 
+to use my photos for anything I like).
+
+**Creative Commons**. You'll notice at the bottom of the 
+page a link to [Some Rights Reserved][rights]. I strongly believe that content we 
+(all humans) create should first and foremost be usable to encourage further creation. 
+As such I license my content under a creative commons "Attribution-NonCommercial-ShareAlike 
+2.0" license, and most photographs (on [flickr][flickr]) from 2007 onwards under 
+an creative commons Attribution 2.5 licence - feel free to use it. Code is, 
+where possible, given away under a BSD-style license. (The source code for this
+website is available on [github][gh].)
+
+The future
+----------
+
+Where do I see myself in one year? I don't know. Right here in Australia, 
+seeing the landscape and taking photos wherever I can. Hopefully 
+finding food too.
+
+In 10 years? In a stable job, that I enjoy, earning enough money to 
+keep myself happy. Much more than that I do not know. What I 
+will be doing to earn that money, where I will be living, what I 
+will do in my spare time, I can not even begin to speculate on.
+
+How can I accurately describe myself on a page which doesn't show emotion? I can not. Perhaps what you have read above will give you a glimpse at the person who has written the code here, the person who writes in the blog. The person behind the pictures you see on Flickr.
+
+Thanks for reading,  
+Patrick.
+
+<small><a href="http://flickr.com/photos/moot/2553343838/">Photo of Patrick</a> taken by flickr user eeyore nz.</small>
+
+[toolkit]: http://soapbox.co.nz/past/2006/11/23/toolkit/
+[rights]: http://soapbox.co.nz/rights-reserved
+[flickr]: http://flickr.com/photos/pftqg
+[gh]: http://github.com/thepatrick/websites/tree/master/thepatrick.com.au/

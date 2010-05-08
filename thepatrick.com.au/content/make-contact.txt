@@ -1,0 +1,26 @@
+---
+title:       Contact
+created_at:  2010-05-08 13:03:00.000000 +10:00
+filter:
+  - erb
+  - markdown
+---
+
+Make Contact
+------------
+
+Import my [vCard][vcard] into your address book of choice. 
+It provides full contact details for me. You could also whois 
+my domain for full contact details.
+
+You can email me at any address at patrick.geek.nz. You could also 
+call/text me on +61 433 494 744. Here are the main methods of contacting 
+yours truly by an instant messaging system of your choosing. 
+For instant messaging I recommend Adium on Mac OS X.
+
+* **MSN**: me @ pftqg.com
+* **ICQ**: 17215559
+* **AIM**: pftqg @ mac.com
+* **Jabber**: patrick @ m.ac.nz
+
+[vcard]: http://patrick.geek.nz/vcard

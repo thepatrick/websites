@@ -1,0 +1,13 @@
+---
+title:       Home Page
+created_at:  2008-08-02 14:06:40.000000 -06:00
+filter:
+  - erb
+---
+
+<nav class="software-and-projects" style="display: none;">
+   <a href="http://m.ac.nz/">software/services,</a>
+   <a href="http://itunes.apple.com/artist/patrick-quinn-graham/id288653497">on iTunes,</a>
+   <a href="http://github.com/thepatrick">code,</a>
+   <a href="http://pqphotos.com/">photography</a>
+</nav>

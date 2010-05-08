@@ -1,0 +1,52 @@
+---
+extension: html
+filter:    erb
+---
+<!DOCTYPE html>
+<html lang="en-us">
+<% resources = "http://i.m.ac.nz/live/thepatrick.com.au/1" -%>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%= @page.title %> Patrick Quinn-Graham (thepatrick)</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS" 
+    href="/rss"/>
+    <link rel="shortcut icon" HREF="http://i.m.ac.nz/live/favicon.ico"/>
+    <% unless @page.title == "Home Page" %>
+    <link rel="stylesheet" href="http://i.m.ac.nz/live/soapbox/8.0/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <% end %>
+    <link rel="stylesheet" href="<%= resources %>/thepatrick.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <% if @page.title == "Home Page" -%>
+      <script src="<%= resources %>/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="<%= resources %>/thepatrick.js" type="text/javascript" charset="utf-8"></script>
+    	<link media="only screen and (max-device-width: 480px)" href="<%= resources %>/iphone.css" type="text/css" rel="stylesheet" />
+    <% end %>
+  	<meta name="viewport" content="width=600"/>
+  </head>
+  <body>
+    <h1<% unless @page.title == "Home Page" -%> class="normal-page"<% end -%>>Patrick Quinn-Graham</h1>
+    <% if @page.title == "Home Page" -%>
+    <div class="content">
+    <% end %>
+    <nav<% unless @page.title == "Home Page" -%> class="normal-page"<% end -%>>
+      <a href="about.html">about patrick</a>,
+      <a href="http://m.ac.nz/" rel="software-and-projects">software and projects</a>,
+      <a href="http://soapbox.co.nz/">soapbox</a>,
+      <a href="make-contact.html">make contact</a>
+    </nav>
+    <% unless @page.title == "Home Page" %>
+    <div id="content">
+      <div class="post">
+        <div class="regular">
+    <% end %>
+          <%= @content %>
+      <% unless @page.title == "Home Page" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="sosumi big <% unless @page.title == "Home Page" -%>un<% end -%>fixed">
+      Copyright &copy; 2010 Patrick Quinn-Graham, with 
+        <a href="http://soapbox.co.nz/rights-reserved">Some Rights Reserved</a>.
+    </div>
+  </body>
+</html>
