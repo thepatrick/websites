@@ -1,0 +1,60 @@
+---
+extension: html
+filter:    erb
+---
+<!DOCTYPE html>
+<html lang="en-us">
+<%
+  collapse_css = true
+  resources = "_static/" 
+  resources = "http://c0022216.cdn1.cloudfiles.rackspacecloud.com/2010/thepatrick.com.au/_static/"
+-%>
+	<head>
+		<meta charset="utf-8"/>
+    <title><%= @page.title unless @page.title == "Home Page" %> <%= @page.site || 'Patrick Quinn-Graham (thepatrick)' -%></title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href=""/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0"/>
+		<script type="text/javascript" src="http://use.typekit.com/urd7xcf.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <% if collapse_css -%>
+    <link rel="stylesheet" href="<%= resources %>v2.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <% else -%>
+    <link rel="stylesheet" href="<%= resources %>v2/lessismore.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<%= resources %>v2/default.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<%= resources %>v2/iphone.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<%= resources %>v2/big.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<%= resources %>v2/big.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<%= resources %>v2/highdpi.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <% end -%>
+	</head>
+  <body>
+	  <header>
+	    <h1><span><%= @page.site || 'Patrick Quinn-Graham' -%></span></h1>
+	    <p>iPhone, iPad, Mac OS X, Web</p>
+	  </header>
+	  <aside>
+	    <% unless @page.title == "Home Page" %>
+	    <nav>
+        <a href="./">home</a>
+        <a href="about.html">about patrick</a>
+        <a href="http://m.ac.nz/" rel="software-and-projects">software and projects</a>
+        <a href="http://soapbox.co.nz/">soapbox</a>
+        <a href="make-contact.html">make contact</a>
+      </nav>
+      <% end %>
+    </aside>
+    <article<%= " class=\"#{@page.article}\"" unless @page.article.nil? %>>
+      <%= @content %>
+    </article>
+    <footer>
+      <p class="sosumi">
+        Subscribe via <a href="/rss">RSS</a> <span class="iphone-dont-hate-me">&nbsp;&middot;&nbsp;</span>
+        Copyright &copy; 2010 Patrick Quinn-Graham, with
+        <a href="http://soapbox.co.nz/rights-reserved">some rights reserved</a>
+      </p>
+    </footer>
+	</body>
+</html>

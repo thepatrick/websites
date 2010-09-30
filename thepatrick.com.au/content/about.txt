@@ -1,6 +1,8 @@
 ---
 title:       About
 created_at:  2010-05-24 00:00:00
+updated_at:  2010-09-20 18:57:00.000000 +10:00
+layout:      v2
 filter:
   - erb
   - markdown
@@ -9,7 +11,7 @@ filter:
 Introductions
 -------------
 
-<img src="http://thepatrick.cachefly.net/about/4/ofme.jpg" width="218" height="152" alt="Me" style="display: block; margin:  11px 30px 19px 0; border: 0; float: left;" />
+<img src="http://thepatrick.cachefly.net/about/4/ofme.jpg" width="218" height="152" alt="Me" class="photo-of-me" />
 
 I am a 26 year old guy who is currently working in Sydney, Australia.
 
@@ -28,12 +30,13 @@ where possible, given away under a BSD-style license. (The source code for this
 website is available on [github][gh].)
 
 You can find me:
-* On flickr
-* On facebook
-* On twitter
-* On iTunes
-* On GitHub
-* On m.ac.nz (code and hosted services)
+
+* On [flickr][fl]
+* On [facebook][fb]
+* On [twitter][tw]
+* On [iTunes][it]
+* On [GitHub][og]
+* On [m.ac.nz][m] (code and hosted services)
 
 <small><a href="http://flickr.com/photos/moot/2553343838/">Photo of Patrick</a> taken by flickr user eeyore nz.</small>
 
@@ -41,3 +44,9 @@ You can find me:
 [rights]: http://soapbox.co.nz/rights-reserved
 [flickr]: http://flickr.com/photos/pftqg
 [gh]: http://github.com/thepatrick/websites/tree/master/thepatrick.com.au/
+[fl]: http://flickr.com/pftqg
+[fb]: http://www.facebook.com/patrickq
+[tw]: http://twitter.com/thepatrick
+[og]: http://github.com/thepatrick
+[m]: http://m.ac.nz/
+[it]: http://itunes.apple.com/au/artist/patrick-quinn-graham/id288653497

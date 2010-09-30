@@ -1,0 +1,300 @@
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/lessismore.css */
+/*
+	Less Framework 2, version 2.0
+	by Joni Korpi
+	-----------------------------
+	http://lessframework.com
+*/
+/* 
+	Resets
+	------
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+article, aside, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, video, object {
+  display: block; }
+
+a img {
+  border: 0; }
+
+figure {
+  position: relative; }
+
+figure img {
+  width: 100%; }
+
+/*
+	Typography presets
+	------------------
+*/
+.gigantic {
+  font-size: 105px;
+  line-height: 120px;
+  letter-spacing: -2px; }
+
+.huge, h1 {
+  font-size: 68px;
+  line-height: 72px;
+  letter-spacing: -2px; }
+
+.large, h2 {
+  font-size: 42px;
+  line-height: 48px;
+  letter-spacing: -1px; }
+
+.big, h3 {
+  font-size: 26px;
+  line-height: 36px; }
+
+.normal, body {
+  font: 16px/1.5 "myriad-pro-1", "myriad-pro-2", Helvetica, Arial, sans-serif;
+  font-weight: lighter; }
+
+.small, small {
+  font-size: 13px;
+  line-height: 18px; }
+
+::selection {
+  background: rgba(30, 30, 30, 0.2); }
+
+::-moz-selection {
+  background: rgba(30, 30, 30, 0.9); }
+
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/default.css */
+/*
+	Default 5-column, 768 px layout for iPads, netbooks, and IE
+	(All other layouts inherit styles from this layout)
+	-----------------------------------------------------------
+	1      2      3      4      5     
+	120px  264px  408px  552px  696px   (24px gutters)
+*/
+body {
+  background: white;
+  padding: 60px 36px 0;
+  width: 696px;
+  margin: 0 auto; }
+
+header {
+  margin-bottom: 50px; }
+
+h1 {
+  color: #BF6A1F;
+  font-weight: bold;
+  font-family: "chaparral-pro-1","chaparral-pro-2"; }
+
+h1 span {
+  background-color: #1e1e1e;
+  padding: 10px 8px 0; }
+
+h2, header p {
+  color: #749325;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0;
+  word-spacing: 4px;
+  font-weight: lighter; }
+
+h3 {
+  color: #212121; }
+
+a {
+  color: #36380E; }
+
+aside {
+  width: 120px;
+  float: left;
+  padding: 20px 0; }
+
+aside nav a {
+  display: block;
+  margin-bottom: 10px; }
+
+article {
+  width: 408px;
+  float: left;
+  margin-left: 24px;
+  color: #333; }
+
+article.two-cols {
+  width: 552px;
+  overflow: hidden; }
+
+article.two-cols .two-cols-left {
+  width: 264px;
+  float: left; }
+
+article.two-cols .two-cols-right {
+  margin-left: 24px;
+  width: 264px;
+  float: left; }
+
+article ul {
+  padding-bottom: 15px; }
+
+article p {
+  padding-bottom: 15px; }
+
+.photo-of-me {
+  display: block;
+  margin: 11px 0 19px 30px;
+  border: 0;
+  float: right; }
+
+aside#about-blob {
+  margin-left: 24px;
+  font-size: 12px;
+  color: #999; }
+
+aside#about-blob small {
+  font-size: 12px; }
+
+footer {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  padding-top: 10px; }
+
+footer nav {
+  font-size: 2.0em; }
+
+footer p {
+  margin: 20px 0;
+  color: #999; }
+
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/iphone.css */
+/* 
+	2-column, 320 px layout for smartphones
+	---------------------------------------
+	1      2
+	120px  264px   (24px gutters)
+*/
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 48px 28px 0;
+    width: 264px; }
+
+  header {
+    margin-bottom: 10px; }
+
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0; }
+
+  h1 span {
+    padding: 8px 4px 4px; }
+
+  aside {
+    width: 100%;
+    float: none;
+    border: none;
+    border-top: 1px solid #eee;
+    background: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px; }
+
+  aside nav a {
+    display: inline;
+    margin-right: 5px; }
+
+  article {
+    width: 264px;
+    float: left;
+    margin-left: 0;
+    float: none; }
+
+  article.two-cols {
+    width: 264px;
+    overflow: hidden; }
+
+  article.two-cols .two-cols-left {
+    float: none; }
+
+  article.two-cols .two-cols-right {
+    margin-left: 0;
+    float: none; }
+
+  .photo-of-me {
+    display: block;
+    margin: 11px auto 19px auto;
+    border: 0;
+    float: none; }
+
+  aside#about-blob {
+    margin-left: 0;
+    font-size: 1.0em;
+    padding-top: 10px;
+    color: #999;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+
+  aside#about-blob small {
+    font-size: 1.0em;
+    display: block;
+    text-align: center; }
+
+  footer .iphone-dont-hate-me {
+    display: block;
+    color: #fff; } }
+
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/big.css */
+/* 
+	8-column, 1224 px layout for desktops and laptops
+	------------------------------------------------------------------------
+	1      2      3      4      5      6      7      8
+	120px  264px  408px  552px  696px  840px  984px  1128px   (24px gutters)
+*/
+@media only screen and (min-width: 1224px) {
+  body {
+    padding: 72px 48px 0;
+    width: 1128px; }
+
+  h1 {
+    line-height: 150%; }
+
+  h2 {
+    font-size: 32px; }
+
+  aside {
+    width: 204px !important;
+    border: none; }
+
+  article {
+    width: 552px !important; }
+
+  article.two-cols {
+    width: 900px !important;
+    overflow: hidden; }
+
+  article.two-cols .two-cols-left {
+    width: 410px;
+    float: left; }
+
+  article.two-cols .two-cols-right {
+    margin-left: 24px;
+    width: 410px;
+    float: left; }
+
+  aside#about-blog {
+    margin-left: 0; } }
+
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/highdpi.css */
+/* 
+	Overrides for iPhone 4 and other high device-pixel-ratio devices
+	----------------------------------------------------------------
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+  #example {
+    background: #ff9e61;
+    background-image: url(../img/refresh-2x.png);
+    ackground-size: 33px 30px; } }

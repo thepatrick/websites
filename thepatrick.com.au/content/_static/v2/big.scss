@@ -1,0 +1,54 @@
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/big.css */
+
+/* 
+	8-column, 1224 px layout for desktops and laptops
+	------------------------------------------------------------------------
+	1      2      3      4      5      6      7      8
+	120px  264px  408px  552px  696px  840px  984px  1128px   (24px gutters)
+*/
+
+@media only screen and (min-width: 1224px) {
+	
+	body {
+		padding: 72px 48px 0;
+		width: 1128px;
+	}
+	
+	h1 {
+		line-height: 150%;
+	}
+	
+	h2 {
+		font-size: 32px;
+	}
+	
+	aside {
+		width: 204px !important;
+		border: none;
+	}
+	
+	article {
+		width: 552px !important;
+	}
+	
+	article.two-cols {
+		width: 900px !important;
+		overflow: hidden;
+	}
+	
+	article.two-cols .two-cols-left {
+		width: 410px;
+		float: left;
+	}
+	
+	article.two-cols .two-cols-right {
+		margin-left: 24px;
+		width: 410px;
+		float: left;
+	}
+	
+	aside#about-blog {
+		margin-left: 0;
+	}
+	
+}

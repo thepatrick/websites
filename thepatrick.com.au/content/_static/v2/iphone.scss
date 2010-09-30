@@ -1,0 +1,96 @@
+/* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/iphone.css */
+
+/* 
+	2-column, 320 px layout for smartphones
+	---------------------------------------
+	1      2
+	120px  264px   (24px gutters)
+*/
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		padding: 48px 28px 0;
+		width: 264px;
+	}
+	header {
+		margin-bottom: 10px;
+	}
+	
+	h1 {
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 0;
+	}
+	
+	h1 span {
+		padding: 8px 4px 4px;
+	}
+	
+	aside {
+		width: 100%;
+		float: none;
+		border: none;
+		border-top: 1px solid #eee;
+		background: none;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #eee;
+		margin-bottom: 10px;
+	}
+	aside nav a {
+		display: inline;
+		margin-right: 5px;
+	}
+		
+		
+	
+	article {
+		width: 264px;
+		float: left;
+		margin-left: 0;
+		float: none
+	}
+	
+	article.two-cols {
+		width: 264px;
+		overflow: hidden;
+	}
+	
+	article.two-cols .two-cols-left {
+		float: none;
+	}
+	
+	article.two-cols .two-cols-right {
+		margin-left: 0;
+		float: none;
+	}
+	
+	.photo-of-me {
+	  display: block; 
+	  margin:  11px auto 19px auto; 
+	  border: 0; 
+	  float: none;
+	}
+	
+		
+	aside#about-blob {
+		margin-left: 0;
+		font-size: 1.0em;
+		padding-top: 10px;
+		color: #999;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+	
+	aside#about-blob small {
+		font-size: 1.0em;
+		display: block;
+		text-align: center;
+	}
+	
+	footer .iphone-dont-hate-me {
+		display: block;
+		color: #fff;
+	}
+}
