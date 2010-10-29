@@ -93,4 +93,8 @@
 		display: block;
 		color: #fff;
 	}
+	
+	.post.text .content img {
+		max-width: 100%;
+	}
 }

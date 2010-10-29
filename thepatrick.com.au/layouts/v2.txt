@@ -7,7 +7,7 @@ filter:    erb
 <%
   collapse_css = true
   resources = "_static/" 
-  resources = "http://c0022216.cdn1.cloudfiles.rackspacecloud.com/2010/thepatrick.com.au/_static/"
+  resources = "http://cdn.m.ac.nz/2010/thepatrick.com.au/"
 -%>
 	<head>
 		<meta charset="utf-8"/>
@@ -53,7 +53,8 @@ filter:    erb
       <p class="sosumi">
         Subscribe via <a href="/rss">RSS</a> <span class="iphone-dont-hate-me">&nbsp;&middot;&nbsp;</span>
         Copyright &copy; 2010 Patrick Quinn-Graham, with
-        <a href="http://soapbox.co.nz/rights-reserved">some rights reserved</a>
+        <a href="http://soapbox.co.nz/rights-reserved">some rights reserved</a><br>
+	<small>ABN 21 397 496 841</small>
       </p>
     </footer>
 	</body>
