@@ -1,0 +1,66 @@
+---
+title:       Welcome to
+created_at:  2010-05-24 00:00:00
+updated_at:  2010-09-20 18:57:00.000000 +10:00
+layout:      v2
+filter:
+  - erb
+site:        m.ac.nz
+article:     two-cols
+---
+  <div class="two-cols-left">
+
+    <h2>Applications</h2>
+
+    <h3><a href="#">Geonoter</a></h3>
+    <p>NEW! A geo bookmarking app.</p>
+
+    <h3><a href="#">CheetahWatch</a></h3>
+    <p>Huawei HSDPA modem monitor for Mac OS X</p>
+
+    <h3><a href="#">JustUpdate</a></h3>
+    <p>A super simple iPhone/iPod Touch app to update your twitter status.</p>
+
+    <h2>Services</h2>
+    
+    <h3><a href="http://dns.m.ac.nz/">M DNS</a></h3>
+    <p>DNS on the Patrick infrastructure.</p>
+
+</div>
+<div class="two-cols-right">
+
+<h2>Code/Libraries</h2>
+
+<p><a href="#">Gearshift</a><br>
+<small>Migrations for Gears, a javascript utility to make managing your Gears databases easier</small>
+</p>
+[PDTable][pd]  
+<small>A javascript class to make generating tables from objects easy</small>
+
+Experiments
+-----------
+
+[Slideshow revisited][sr]  
+<small>A Javascript powered slideshow, not flickr powered.</small>
+
+[DOM Flickr Badge][dff]    
+<small>Get your flickr badge DOM style</small>
+
+[Favourite Photographer][fp]  
+<small>Who's your favourite photographer on Flickr?</small>
+
+[Slideshow][ss]  
+<small>A Javascript Flickr API consumer</small>
+
+</div>
+
+<!-- [gn]:  http://itunes.apple.com/au/app/geonoter/id385466474?mt=8
+[cw]:  http://m.ac.nz/cheetahwatch/
+[dns]: http://dns.m.ac.nz/
+[ju]:  http://m.ac.nz/justupdate/
+[gs]:  http://m.ac.nz/gearshift/
+[pd]:  http://code.m.ac.nz/pdtable/
+[sr]:  http://m.ac.nz/e/try/
+[dff]: http://m.ac.nz/d/
+[fp]:  http://m.ac.nz/c/
+[ss]:  http://m.ac.nz/b/ -->
