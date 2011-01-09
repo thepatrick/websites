@@ -13,8 +13,15 @@
 		padding: 48px 28px 0;
 		width: 264px;
 	}
+
 	header {
 		margin-bottom: 10px;
+	}
+	
+	header p {
+		font-size: 0.9em;
+		font-weight: lighter;
+		line-height: 1.3em;
 	}
 	
 	h1 {
@@ -23,24 +30,19 @@
 		letter-spacing: 0;
 	}
 	
-	h1 span {
-		padding: 8px 4px 4px;
-	}
-	
 	aside {
 		width: 100%;
 		float: none;
 		border: none;
-		border-top: 1px solid #eee;
 		background: none;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		border-bottom: 1px solid #eee;
+		padding-top: 0;
+		padding-bottom: 15px;
 		margin-bottom: 10px;
 	}
 	aside nav a {
 		display: inline;
 		margin-right: 5px;
+		text-decoration: underline;
 	}
 		
 		
@@ -91,10 +93,14 @@
 	
 	footer .iphone-dont-hate-me {
 		display: block;
-		color: #fff;
+		color: rgba(0,0,0,0);
 	}
 	
-	article .post img {
-  	max-width: 100%;
+	.post.text .content img {
+		max-width: 100%;
+	}
+	
+	footer nav {
+		font-size: 1.0em;
 	}
 }

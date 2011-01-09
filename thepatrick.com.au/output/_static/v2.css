@@ -76,7 +76,7 @@ figure img {
 	120px  264px  408px  552px  696px   (24px gutters)
 */
 body {
-  background: white;
+  background: #05050a;
   padding: 60px 36px 0;
   width: 696px;
   margin: 0 auto; }
@@ -85,16 +85,11 @@ header {
   margin-bottom: 50px; }
 
 h1 {
-  color: #BF6A1F;
-  font-weight: bold;
-  font-family: "chaparral-pro-1","chaparral-pro-2"; }
-
-h1 span {
-  background-color: #1e1e1e;
-  padding: 10px 8px 0; }
+  color: #fff;
+  font-weight: 100; }
 
 h2, header p {
-  color: #749325;
+  color: #999;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0;
@@ -102,10 +97,11 @@ h2, header p {
   font-weight: lighter; }
 
 h3 {
-  color: #212121; }
+  color: #fff;
+  font-weight: 100; }
 
 a {
-  color: #36380E; }
+  color: #beee41; }
 
 aside {
   width: 120px;
@@ -114,13 +110,15 @@ aside {
 
 aside nav a {
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 90; }
 
 article {
   width: 408px;
   float: left;
   margin-left: 24px;
-  color: #333; }
+  color: #ddd; }
 
 article.two-cols {
   width: 552px;
@@ -183,28 +181,29 @@ footer p {
   header {
     margin-bottom: 10px; }
 
+  header p {
+    font-size: 0.9em;
+    font-weight: lighter;
+    line-height: 1.3em; }
+
   h1 {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0; }
 
-  h1 span {
-    padding: 8px 4px 4px; }
-
   aside {
     width: 100%;
     float: none;
     border: none;
-    border-top: 1px solid #eee;
     background: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #eee;
+    padding-top: 0;
+    padding-bottom: 15px;
     margin-bottom: 10px; }
 
   aside nav a {
     display: inline;
-    margin-right: 5px; }
+    margin-right: 5px;
+    text-decoration: underline; }
 
   article {
     width: 264px;
@@ -244,10 +243,13 @@ footer p {
 
   footer .iphone-dont-hate-me {
     display: block;
-    color: #fff; }
+    color: rgba(0, 0, 0, 0); }
 
-  article .post img {
-    max-width: 100%; } }
+  .post.text .content img {
+    max-width: 100%; }
+
+  footer nav {
+    font-size: 1.0em; } }
 
 /* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/big.css */
 /* 

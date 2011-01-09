@@ -9,7 +9,7 @@
 */
 
 body {
-	background: rgb(255,255,255);
+	background: rgb(5,5,10);
 	padding: 60px 36px 0;
 	width: 696px;
 	margin: 0 auto;
@@ -20,18 +20,12 @@ header {
 }
 
 h1 {
-	color: #BF6A1F;
-	font-weight: bold;
-	font-family: "chaparral-pro-1","chaparral-pro-2";
-}
-
-h1 span {
-	background-color: rgba(30,30,30,1.0);
-	padding: 10px 8px 0;
+	color: #fff;
+	font-weight: 100;
 }
 
 h2, header p {
-	color: #749325;
+	color: #999;
 
 	font-size: 18px;
 	line-height: 36px;
@@ -41,11 +35,12 @@ h2, header p {
 }
 
 h3 {
-	color: #212121;
+	color: #fff;
+	font-weight: 100;
 }
 
 a {
-	color: #36380E;
+	color: #beee41;
 }
 
 
@@ -58,13 +53,15 @@ aside {
 aside nav a {
 	display: block;
 	margin-bottom: 10px;
+	text-decoration: none;
+	font-weight: 90;
 }
 
 article {
 	width: 408px;
 	float: left;
 	margin-left: 24px;
-	color: #333;
+	color: #ddd;
 }
 
 article.two-cols {
