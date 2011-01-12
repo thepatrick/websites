@@ -10,10 +10,7 @@ filter:
 <h3>Welcome</h3>
 
 <p>
-    <a href="about.html">About Patrick</a> |
-    <a href="http://m.ac.nz/" rel="software-and-projects">Software and Projects</a> | 
-    <a href="http://soapbox.co.nz/">Soapbox</a> |
-    <a href="make-contact.html">Make contact</a>
+    Good to have you here.
 </p>
 
 <h3>

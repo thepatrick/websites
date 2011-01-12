@@ -94,7 +94,8 @@
 	footer .iphone-dont-hate-me {
 		display: block;
 		color: rgba(0,0,0,0);
-	}
+	font-variant: small-caps;
+}
 	
 	.post.text .content img {
 		max-width: 100%;
