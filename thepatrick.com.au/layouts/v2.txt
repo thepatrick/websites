@@ -47,6 +47,11 @@ filter:    erb
     <article<%= " class=\"#{@page.article}\"" unless @page.article.nil? %>>
       <%= @content %>
     </article>
+    <% if @page.sidebar -%>
+    <aside id="about-blob">
+      <%= @page.sidebar %>
+    </aside>
+    <% end -%>
     <footer>
       <p class="sosumi">
         Copyright &copy; 1999-2011 Patrick Quinn-Graham, with

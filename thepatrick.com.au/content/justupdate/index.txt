@@ -1,0 +1,33 @@
+---
+title:       Home Page
+created_at:  2011-01-13 11:15:00 +11:00
+updated_at:  2011-01-13 11:15:00 +11:00
+layout:      v2
+filter:
+  - erb
+site:        JustUpdate
+tagline:     Just an update field, Just for Twitter.
+article:     two-cols
+sidebar:     
+---
+
+<a href="http://itunes.apple.com/us/app/justupdate/id288653494?mt=8"><img src="http://cdn.m.ac.nz/2011/justupdate/mzl.wunwktco.320x480-75.jpg" height="230" width="160" class="photo-of-me"></a>
+
+<p>
+	If you're like me you get your twitter updates on the go via SMS, but you have to pay
+	to send SMS back to twitter. You might even be slightly bitter about this. So all you
+	want in a web app is an update field, and perhaps a counter of remaining characters,
+	one that if the update fails won't lose your text. 
+</p>
+
+<p><big><strong><a href="http://itunes.apple.com/us/app/justupdate/id288653494?mt=8">Get JustUpdate from the AppStore</a>.</strong></big></p>
+
+<p>
+	Provided free of charge, so do what you want with it, just don't blame me when you 
+	accidentally cause a meltdown of a nuclear reactor. Please. Any questions, complaints, death
+	threats, just <a href="/make-contact.html">contact me</a>.
+</p>
+
+<p>
+	The source code is available <a href="http://github.com/thepatrick/justupdate">on github</a>.
+</p>
