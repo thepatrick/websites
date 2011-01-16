@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<title>Who's your Favourite Photographer? - m.ac.nz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://cdn.m.ac.nz/macnz/c/mootools.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://cdn.m.ac.nz/macnz/c/pdtable.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="http://cdn.m.ac.nz/macnz/c/fp.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="/is.geek.nz/macnz/c/fp.js" type="text/javascript" charset="utf-8"></script> -->
+
+<style type="text/css">
+@import url( http://cdn.m.ac.nz/macnz/global/fancy.css );
+@import url( http://cdn.m.ac.nz/macnz/c/fp.css );
+</style>
+<script type="text/javascript">
+window.addEvent('load', function(){
+	new fp({ xml: '/flickrtools/xmlproxy' });
+});
+</script>
+</head>
+<body>
+	<div id="page-badge">
+		<a href="http://patrick.geek.nz/" id="page-badge-global"><span>m.ac.nz</span></a>
+		<a href="http://m.ac.nz/" id="page-badge-local"><span>m.ac.nz</span></a>
+	</div>
+	<h1><img src="http://cdn.m.ac.nz/macnz/c/header.png" alt="DOM Flickr Badge" /></h1>
+	<div class="content"><div class="ci narrow">
+		<div id="contains-everything" style="display: none;">
+			<a style="display: block; float: right;" href="about.html">About</a>
+			For User: <input type="text" id="theUserName" value=""/> <input type="submit" id="theSearch" value="Begin"/>
+			<table id="favs">
+				<tr id="favs-h">
+					<th colspan="2">User</th>
+					<th class="favs-photocount">Favourites</th>
+					<th class="favs-mostrecent">Latest</th>
+				</tr>
+				<tr id="favs-s">
+					<td class="favs-usericon"><a href="#"><img src="#" alt="#"/></a></td>
+					<td class="favs-name">&nbsp;</td>
+					<td class="favs-photocount">&nbsp;</td>
+					<td class="favs-mostrecent"><a href="#"><img src="#" alt="#"/></td>
+				</tr>
+			</table>
+		</div>
+		<div id="status" style="border: 1px solid #333; padding: 5px;">Loading, please wait...</div>
+	</div></div>
+	<div class="sosumi">
+		Copyright &copy; 2007 Patrick Quinn-Graham with <a href="http://soapbox.co.nz/rights-reserved">some rights reserved</a>. 
+	</div>
+</body>
+</html>

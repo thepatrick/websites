@@ -1,0 +1,113 @@
+---
+title:       Interesting
+created_at:  2011-01-13 11:15:00 +11:00
+updated_at:  2011-01-13 11:15:00 +11:00
+layout:      
+filter:
+  - erb
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta name="apple-touch-fullscreen" content="YES"/>
+	<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	
+	<title>Interesting</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 2px;
+			background-color: #eee;
+		}
+		#collection {
+			width: 100%;
+			overflow: hidden;
+		}
+		#collection img {
+			display: block;
+			padding: 2px;
+			float: left;
+			width: 75px;
+			height: 75px;
+		}
+		
+		a {
+			display: block;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 17px;
+			padding: 12px 4px;
+			text-align: center;
+			text-decoration: none;
+			color: #444;
+			border: 1px solid #444;
+			-webkit-border-radius: 5px;
+			width: 280px;
+			margin: 20px auto;
+			clear: both;
+			background-color: #fff;
+		}
+	</style>
+	
+	<script type="application/x-javascript" src="http://thepatrick.cachefly.net/iui/iui-cutdown.js"></script>
+</head>
+
+<body>	
+
+<div id="collection"></div>
+
+<script type="text/javascript">
+	page = document.location.search.substring(1);	
+	if(!page) page = 1
+	else page = parseInt(page);
+	
+	document.write("<"+"script type=\"text/javascript\"" +
+	"src=\"http://flickr.com/services/rest/?method=flickr.interestingness.getList"+ 	
+	"&amp;format=json&amp;api_key=ea1580bc3b47e65b5cdda60ae2a47c15&amp;"+
+	"jsoncallback=wooYay&amp;per_page=24&amp;page="+page+"\"></"+"script>");
+	
+	function wooYay(a) {
+		if(a.stat != "ok") {
+			alert("Error retrieving photos.");
+			return;
+		}
+		photos = a.photos.photo;
+		im = photos.length;
+		
+		
+		coll = document.getElementById("collection");
+		
+		for(i=0;i<im;i++) {
+			
+			p = photos[i];
+			url = 'http://farm' + p.farm + '.static.flickr.com/' + p.server +
+				'/' + p.id + '_' + p.secret + '_s.jpg';
+			
+			img = document.createElement("img");
+			img.src = url;
+			
+			img.obj = p;
+			
+			img.onclick = function() {
+				doImgClick(this.obj);
+			}
+			
+			coll.appendChild(img);
+			
+		}
+
+		if(a.photos.pages > page) {
+			arf = document.createElement("a");
+			arf.href = "?"+(page+1);			
+			arf.appendChild(document.createTextNode("Next 24..."));
+			document.getElementsByTagName('body')[0].appendChild(arf);
+		}
+	}
+	function doImgClick(img) {
+		window.open('display.html#'+escape(img.id)+"&"+escape(img.owner)+"&"+escape(img.title));
+	}
+</script>
+</body>
+</html>

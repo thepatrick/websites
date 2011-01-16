@@ -1,0 +1,31 @@
+---
+title:       Web Version - 
+created_at:  2011-01-13 11:15:00 +11:00
+updated_at:  2011-01-13 11:15:00 +11:00
+layout:      v2
+filter:
+  - erb
+site:        JustUpdate
+tagline:     Just an update field, Just for Twitter.
+article:     two-cols
+sidebar:     
+---
+
+<p>
+	<strong>The web version of JustUpdate is no longer available</strong> due 
+	to the discovery of a potential security vulnerability. With more features,
+	yet still very compact, an iPhone/iPod app is now available.
+</p>
+
+
+<p><big><strong><a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=288653494&amp;mt=8">Get JustUpdate from the AppStore</a>.</strong></big></p>
+
+<p>
+	Provided free of charge, so do what you want with it, just don't blame me when you 
+	accidentally cause a meltdown of a nuclear reactor. Please. Any questions, complaints, death
+	threats, just <a href="http://patrick.geek.nz/contactme">contact me</a>.
+</p>
+
+<p>
+	The source code is available <a href="http://github.com/thepatrick/justupdate">on github</a>.
+</p>

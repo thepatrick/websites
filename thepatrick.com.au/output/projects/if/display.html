@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta name="apple-touch-fullscreen" content="YES"/>
+	<meta name="viewport" content="width=device-width; user-scalable=1;"/>
+	
+	<title>/M/</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+		img {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<script type="application/x-javascript" src="http://thepatrick.cachefly.net/iui/iui-cutdown.js"></script>
+</head>
+
+<body>	
+
+<script type="text/javascript">
+	hash = window.location.hash.substring(1);
+	m = hash.split("&");
+	
+	photo_id = unescape(m[0]);
+	owner = unescape(m[1]);
+	title = unescape(m[2]);
+	
+	document.title = title;
+	
+	document.write("<"+"script type=\"text/javascript\"" +
+	"src=\"http://flickr.com/services/rest/?method=flickr.photos.getSizes"+ 	
+	"&amp;format=json&amp;api_key=ea1580bc3b47e65b5cdda60ae2a47c15&amp;"+
+	"jsoncallback=wooYay&amp;photo_id="+photo_id+"\"></"+"script>");
+	
+	function wooYay(a) {
+		if(a.stat != "ok") {
+			alert("Error retrieving photos.");
+			return;
+		}
+
+		sizes = a.sizes.size;
+		im = sizes.length;
+		
+		if(im < 4) use_size = (im - 1);
+		else use_size = 3;
+		
+		bodyTag = document.getElementsByTagName('body')[0];
+
+		photo_page = "http://flickr.com/photos/"+owner + "/" + photo_id + "/"
+		
+		img = document.createElement('img');
+		img.src = sizes[use_size].source;
+		
+		ahr = document.createElement('a');
+		ahr.href = photo_page;
+
+		ahr.appendChild(img);
+		bodyTag.appendChild(ahr);
+		
+	}
+</script>
+
+
+</body>
+</html>
