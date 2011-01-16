@@ -45,7 +45,7 @@ article:     two-cols
   <p><a href="http://m.ac.nz/d/">DOM Flickr Badge</a><br>   
   <small>Get your flickr badge DOM style</small></p>
 
-  <p><a href="http://m.ac.nz/c/">Favourite Photographer</a><br> 
+  <p><a href="/projects/favourite-photographers/">Favourite Photographer</a><br> 
   <small>Who's your favourite photographer on Flickr?</small></p>
 
   <p><a href="http://m.ac.nz/b/">Slideshow</a><br>  
