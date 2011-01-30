@@ -42,6 +42,7 @@ filter:    erb
         <a href="/projects/" rel="software-and-projects">software and projects</a>
         <a href="http://myio.com.au/">my I/O</a>
         <a href="/make-contact.html">make contact</a>
+        <a href="http://yearofthebook.thepatrick.com.au/">Year of the Book</a>
       </nav>
     </aside>
     <article<%= " class=\"#{@page.article}\"" unless @page.article.nil? %>>
