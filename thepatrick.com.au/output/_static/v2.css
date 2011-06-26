@@ -61,11 +61,8 @@ figure img {
   font-size: 13px;
   line-height: 18px; }
 
-::selection {
-  background: rgba(30, 30, 30, 0.2); }
-
-::-moz-selection {
-  background: rgba(30, 30, 30, 0.9); }
+::selection 	 {background: rgba(245, 245,245,0.2);}
+::-moz-selection {background: rgba(245,245,245,0.9);}
 
 /* @override http://cole.local/websites/v2.thepatrick.com.au/stylesheets/default.css */
 /*
